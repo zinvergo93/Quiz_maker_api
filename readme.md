@@ -48,6 +48,8 @@ methods = POST
 "answer_b" = "answer_b"
 "answer_c" = "answer_c"
 "answer_d" = "answer_d"
-"correct_answer" = "correct_answer" \*\*SINGLE DIGIT EXPECTED i.e. "a", "b", "c", "d"
+"correct_answer" = "correct_answer"
 }
 ```
+
+CURRENT BUG: If you add a question with a quiz_id of a quiz that doesn't exist on the Quiz table, it will throw and error
