@@ -14,14 +14,34 @@
 
 - Run with "python quiz_maker.py"
 
+- Heroku URL: https://bottega-quiz-maker-api.herokuapp.com/
+
 ## ROUTES
 
 - '/add-quiz'
 - '/all-quizzes'
-- '/edit-quiz/<id>'
+- '/edit-quiz/<id>' methods= PUT
 - '/delete-quiz/<id>'
 
 - '/add-question'
 - '/all-questions'
-- '/edit-question/<id>'
+- '/edit-question/<id>' methods= PUT
 - '/delete-question/<id>'
+
+'/add-quiz'
+methods= POST
+{
+"title" = "title"
+}
+
+'/add-question'
+methods = POST
+{
+"quiz_id" = "quiz_id"
+"question" = "question"
+"answer_a" = "answer_a"
+"answer_b" = "answer_b"
+"answer_c" = "answer_c"
+"answer_d" = "answer_d"
+"correct_answer" = "correct_answer" \*\*SINGLE DIGIT EXPECTED i.e. "a", "b", "c", "d"
+}
