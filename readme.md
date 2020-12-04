@@ -30,12 +30,17 @@
 
 '/add-quiz'
 methods= POST
+
+```
 {
 "title" = "title"
 }
+```
 
 '/add-question'
 methods = POST
+
+```
 {
 "quiz_id" = "quiz_id"
 "question" = "question"
@@ -45,3 +50,4 @@ methods = POST
 "answer_d" = "answer_d"
 "correct_answer" = "correct_answer" \*\*SINGLE DIGIT EXPECTED i.e. "a", "b", "c", "d"
 }
+```

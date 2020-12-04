@@ -37,7 +37,7 @@ class Question(db.Model):
     answer_b = db.Column(db.String(100), unique=False)
     answer_c = db.Column(db.String(100), unique=False)
     answer_d = db.Column(db.String(100), unique=False)
-    correct_answer = db.Column(db.String(5), unique=False)
+    correct_answer = db.Column(db.String(25), unique=False)
 
 
 class QuestionSchema(ma.Schema):
